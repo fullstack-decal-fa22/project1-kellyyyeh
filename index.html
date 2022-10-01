@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kelly Yeh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelly Yeh</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <h1 class="title">Kelly Yeh</h1>
+
+    <div class="grid-container" style="grid-template-columns: auto auto; row-gap: 10px;">
+        <img class="grid-item about-me" style="max-width: 82%;" src="About-Me-Picture.jpg"/>
+        <div class="grid-item about-me">
+            <h2 class="about-me">About Me</h2>
+            <h4 class="about-me" id="self-introduction">
+                Hello! I'm Kelly, a sophomore at UC Berkeley studying computer science.
+                I'm interested in synthesizing software development and data science, but I also love design too!
+            </h4>
+            <a class="about-me" href="https://www.linkedin.com/in/kelly-yeh-b08217232/" target="_blank">LinkedIn</a> 
+            <a class="about-me" href="https://github.com/kellyyyeh" target="_blank">GitHub</a>
+            <a class="about-me" href="https://www.instagram.com/kellyyyeh_/" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <br>
+
+    <h2 id="relevant-work">Relevant Work</h2>
+    <div class="flex-container relevant-work">
+        <button class="flex-item relevant-work-item" onclick="window.open('visionix.html', '_blank')">Visionix</button>
+        <button class="flex-item relevant-work-item" onclick="window.open('coursestaff.html', '_blank')">UC Berkeley Course Staff</button>
+        <button class="flex-item relevant-work-item" onclick="window.open('codeology.html', '_blank')">Codeology</button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h3 id="contact" style="text-align: center;">Contact</h3>
+    <h5 class="flex-container contact-container">
+        <span class="flex-item" id="contact-info">
+            <span>kellyyyeh@berkeley.edu</span>
+            <span>(669) 900-2162</span>
+        </span>
+        <form class="flex-item message">
+            <h6 style="margin: 0px;">
+                Send me a message :)
+                <input type="text" name="submitted-message"/>
+                <input id="submit" type="button" value="Submit"/>
+                <label id="counter">
+                    1
+                </label>    
+            </h6>
+            <script>
+                let submit = document.getElementById("submit");
+                let counter = document.getElementById("counter");
+                let count = document.getElementById("counter").innerHTML;
+                submit.addEventListener("click", function (event) {
+                    count++;
+                    counter.innerHTML = count;
+                    alert(`message received!`);
+                });
+            </script>
+        </form>
+    </h5>
+
+</body>
+</html>

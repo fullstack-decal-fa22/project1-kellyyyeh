@@ -1,0 +1,76 @@
+* {
+    font-family: Trebuchet MS;
+    color: rgb(56, 56, 56);
+    margin: 20px;
+    background-color: rgb(252, 252, 252);
+}
+
+.title {
+    font: 100px Trebuchet MS;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    /* position: relative;
+    left: 100px; */
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-item {
+    padding: 20px;
+    margin: 0px;
+}
+
+.about-me {
+    background-color:rgb(228, 231, 230);
+}
+
+#self-introduction {
+    padding-left: 0px;
+    line-height: 150%;
+}
+
+.relevant-work {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(202, 218, 213);
+    text-align: center;
+    padding: 10px;
+}
+
+.relevant-work-item {
+    background-color: rgb(252, 252, 252);
+    border-style: solid;
+    border-color:rgb(228, 231, 230);
+    border-width: 5px;
+    padding: 20px 30px;
+    margin: 10px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.relevant-work-item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+}
+
+.contact-container {
+    display: inline;
+}
+
+#contact-info {
+    position: absolute;
+    left: 0px;
+}
+
+.message {
+    position: absolute;
+    right: 0px;
+    margin: 0px;
+}
